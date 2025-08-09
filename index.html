@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tgh Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <header class="glass-header">
+        <div class="logo">
+            <i class="fas fa-calculator"></i>
+            <span>TGH TOOLS</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="active" data-tab="calculator"><i class="fas fa-calculator"></i> Kalkulator</li>
+                <li data-tab="converter"><i class="fas fa-exchange-alt"></i> Konversi mata uang</li>
+                <li data-tab="stopwatch"><i class="fas fa-stopwatch"></i> Stopwatch</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Kode Kalkulator -->
+            <div class="tab-content active" id="calculator">
+                <div class="card glass-card calculator-3d">
+                    <div class="calculator-display">
+                        <div class="previous-operand"></div>
+                    </div>
+                    <div class="calculator-buttons">
+                        <button class="calc-btn operator" data-value="AC">AC</button>
+                        <button class="calc-btn operator" data-value="DEL">DEL</button>
+                        <button class="calc-btn operator" data-value="%">%</button>
+                        <button class="calc-btn operator" data-value="/">/</button>
+                        
+                        <button class="calc-btn" data-value="7">7</button>
+                        <button class="calc-btn" data-value="8">8</button>
+                        <button class="calc-btn" data-value="9">9</button>
+                        <button class="calc-btn operator" data-value="*">×</button>
+                        
+                        <button class="calc-btn" data-value="4">4</button>
+                        <button class="calc-btn" data-value="5">5</button>
+                        <button class="calc-btn" data-value="6">6</button>
+                        <button class="calc-btn operator" data-value="-">-</button>
+                        
+                        <button class="calc-btn" data-value="1">1</button>
+                        <button class="calc-btn" data-value="2">2</button>
+                        <button class="calc-btn" data-value="3">3</button>
+                        <button class="calc-btn operator" data-value="+">+</button>
+                        
+                        <button class="calc-btn" data-value="0">0</button>
+                        <button class="calc-btn" data-value="00">00</button>
+                        <button class="calc-btn" data-value=".">.</button>
+                        <button class="calc-btn operator equals" data-value="=">=</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kode Konversi mata uang -->
+            <div class="tab-content" id="converter">
+                <div class="card glass-card converter-3d">
+                    <h2><i class="fas fa-exchange-alt"></i> Currency Converter</h2>
+                    <div class="converter-container">
+                        <div class="input-group">
+                            <input type="number" id="amount" placeholder="Amount" value="1000" min="0">
+                            <select id="from-currency">
+                                <option value="USD">USD - US Dollar</option>
+                                <option value="EUR">EUR - Euro</option>
+                                <option value="GBP">GBP - British Pound</option>
+                                <option value="JPY">JPY - Japanese Yen</option>
+                                <option value="IDR" selected>IDR - Indonesian Rupiah</option>
+                            </select>
+                        </div>
+                        
+                        <div class="swap-btn">
+                            <button id="swap-currencies"><i class="fas fa-exchange-alt"></i></button>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="number" id="result" placeholder="Result" readonly>
+                            <select id="to-currency">
+                                <option value="USD" selected>USD - US Dollar</option>
+                                <option value="EUR">EUR - Euro</option>
+                                <option value="GBP">GBP - British Pound</option>
+                                <option value="JPY">JPY - Japanese Yen</option>
+                                <option value="IDR">IDR - Indonesian Rupiah</option>
+                            </select>
+                        </div>
+                        
+                        <button id="convert-btn">Convert</button>
+                        
+                        <div class="rate-info">
+                            <span id="rate"></span>
+                            <span id="last-updated"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kode Stopwatch -->
+            <div class="tab-content" id="stopwatch">
+                <div class="card glass-card stopwatch-3d">
+                    <h2><i class="fas fa-stopwatch"></i> Stopwatch</h2>
+                    <div class="stopwatch-display">
+                        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+                    </div>
+                    <div class="stopwatch-controls">
+                        <button id="start-stopwatch"><i class="fas fa-play"></i> Start</button>
+                        <button id="pause-stopwatch" disabled><i class="fas fa-pause"></i> Pause</button>
+                        <button id="reset-stopwatch"><i class="fas fa-redo"></i> Reset</button>
+                        <button id="lap-stopwatch"><i class="fas fa-flag"></i> Lap</button>
+                    </div>
+                    <div class="laps-container">
+                        <h3>Laps</h3>
+                        <div id="laps"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="glass-footer">
+        <p>© 2025 Tgh Tools </p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
