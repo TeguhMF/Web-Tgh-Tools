@@ -1,12 +1,15 @@
 # Tgh Tools 
+
 adalah sebuah website sederhana tugas kuliah yang menggabungkan beberapa alat utilitas dalam satu antarmuka modern dengan tema gelap. Website ini mencakup:
 
 # Fungsi
+
 -Kalkulator dengan fungsi aritmatika dasar
 -Konverter Mata Uang (simulasi)
 -Stopwatch dengan pencatatan lap time
 
 # Fitur Utama
+
 1. Tampilan Modern
 -Dark theme dengan aksen ungu
 -Glassmorphism (efek kaca) pada card dan header
@@ -33,6 +36,7 @@ adalah sebuah website sederhana tugas kuliah yang menggabungkan beberapa alat ut
 -Tampilan waktu dengan animasi
    
 # TECH 
+
 HTML5 - Struktur dasar website
 CSS3 - Styling dengan custom properties dan animasi
 JavaScript - Logika aplikasi dan interaktivitas
