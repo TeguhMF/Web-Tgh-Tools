@@ -1,6 +1,6 @@
 # Tgh Tools 
 
-adalah sebuah website sederhana tugas kuliah yang menggabungkan beberapa alat utilitas dalam satu antarmuka modern dengan tema gelap. Website ini mencakup:
+adalah sebuah website sederhana tugas kuliah yang menggabungkan beberapa alat utilitas dalam satu antarmuka modern dengan tema gelap, menggunakan html css dan js. Website ini mencakup:
 
 # Fungsi
 
@@ -8,7 +8,7 @@ adalah sebuah website sederhana tugas kuliah yang menggabungkan beberapa alat ut
 -Konverter Mata Uang (simulasi)
 -Stopwatch dengan pencatatan lap time
 
-# Fitur Utama
+# Fitur
 
 1. Tampilan Modern
 -Dark theme dengan aksen ungu
